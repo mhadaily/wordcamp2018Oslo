@@ -6,7 +6,7 @@ var STATIC_ASSETS = [
   '/home.html',
   '/whatever.html',
   '/offline.html',
-  `${conifg.themeUrl}/scripts/jsfile.js`,
+  `${__myconfig.themeUrl}/scripts/jsfile.js`,
   'https://fonts.googleapis.com/css?family=Roboto:400,700',
   'https://fonts.googleapis.com/icon?family=Material+Icons',
 ];
@@ -86,7 +86,6 @@ self.addEventListener('fetch', (event) => {
     );
   }
 });
-
 
 // Example to check request url
 function isPluginRequest(event) {
